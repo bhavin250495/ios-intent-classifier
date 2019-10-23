@@ -8,19 +8,33 @@
 
 import Foundation
 
+ enum EmbeddingType {
+    case autocorrect
+    case intent_search
+}
 
 class Embeddings {
     
-    private let file_name = "Embeddings"
+    private var file_name = "auto_correct_embeddings"
     
     private var token = [String:Double]()
     
-    init() {
-        read_file()
+   
+    
+    init(type: EmbeddingType) {
+        read_file(type: type)
         
     }
     
-    private func read_file() {
+    
+    private func read_file(type: EmbeddingType) {
+        
+        if type == .autocorrect {
+            file_name = "auto_correct_embeddings"
+        }
+        else {
+            file_name = "Embeddings"
+        }
         if let path = Bundle.main.path(forResource: file_name, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
