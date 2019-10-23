@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE3AB92A2355971600B55496 /* pain_level_training.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AE3AB9292355971600B55496 /* pain_level_training.mlmodel */; };
+		AE2C8464235F133B00F30181 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2C8463235F133B00F30181 /* SpeechManager.swift */; };
+		AE2C8466236034DE00F30181 /* intent_classification_test.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AE2C8465236034DE00F30181 /* intent_classification_test.mlmodel */; };
+		AE2C846A23603CBB00F30181 /* auto_correct_embeddings.json in Resources */ = {isa = PBXBuildFile; fileRef = AE2C846923603CBB00F30181 /* auto_correct_embeddings.json */; };
+		AE2C84702360638A00F30181 /* drug_name_correction.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AE2C846F2360638A00F30181 /* drug_name_correction.mlmodel */; };
 		AE7435D62350580600C07DA1 /* Embeddings.json in Resources */ = {isa = PBXBuildFile; fileRef = AE7435D52350580600C07DA1 /* Embeddings.json */; };
 		AE7435D82350582B00C07DA1 /* Embeddings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7435D72350582B00C07DA1 /* Embeddings.swift */; };
 		AE7435DA2350616C00C07DA1 /* MLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7435D92350616C00C07DA1 /* MLManager.swift */; };
@@ -21,7 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE3AB9292355971600B55496 /* pain_level_training.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = pain_level_training.mlmodel; sourceTree = "<group>"; };
+		AE2C8463235F133B00F30181 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		AE2C8465236034DE00F30181 /* intent_classification_test.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = intent_classification_test.mlmodel; sourceTree = "<group>"; };
+		AE2C846923603CBB00F30181 /* auto_correct_embeddings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = auto_correct_embeddings.json; sourceTree = "<group>"; };
+		AE2C846F2360638A00F30181 /* drug_name_correction.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = drug_name_correction.mlmodel; sourceTree = "<group>"; };
 		AE7435D52350580600C07DA1 /* Embeddings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Embeddings.json; sourceTree = "<group>"; };
 		AE7435D72350582B00C07DA1 /* Embeddings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embeddings.swift; sourceTree = "<group>"; };
 		AE7435D92350616C00C07DA1 /* MLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLManager.swift; sourceTree = "<group>"; };
@@ -66,7 +72,9 @@
 		AE7B08052347481D00AC1214 /* SpeechBot */ = {
 			isa = PBXGroup;
 			children = (
-				AE3AB9292355971600B55496 /* pain_level_training.mlmodel */,
+				AE2C846F2360638A00F30181 /* drug_name_correction.mlmodel */,
+				AE2C8465236034DE00F30181 /* intent_classification_test.mlmodel */,
+				AE2C846923603CBB00F30181 /* auto_correct_embeddings.json */,
 				AE7B08062347481D00AC1214 /* AppDelegate.swift */,
 				AE7B08082347481D00AC1214 /* SceneDelegate.swift */,
 				AE7B080A2347481D00AC1214 /* ViewController.swift */,
@@ -78,6 +86,7 @@
 				AE7435D52350580600C07DA1 /* Embeddings.json */,
 				AE7435D72350582B00C07DA1 /* Embeddings.swift */,
 				AE7435D92350616C00C07DA1 /* MLManager.swift */,
+				AE2C8463235F133B00F30181 /* SpeechManager.swift */,
 			);
 			path = SpeechBot;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 			files = (
 				AE7B08132347481F00AC1214 /* LaunchScreen.storyboard in Resources */,
 				AE7435D62350580600C07DA1 /* Embeddings.json in Resources */,
+				AE2C846A23603CBB00F30181 /* auto_correct_embeddings.json in Resources */,
 				AE7B08102347481F00AC1214 /* Assets.xcassets in Resources */,
 				AE7B080E2347481D00AC1214 /* Main.storyboard in Resources */,
 			);
@@ -154,11 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2C8466236034DE00F30181 /* intent_classification_test.mlmodel in Sources */,
 				AEA18366234B91720040CFDA /* Lemmatizer.swift in Sources */,
+				AE2C8464235F133B00F30181 /* SpeechManager.swift in Sources */,
 				AE7435DA2350616C00C07DA1 /* MLManager.swift in Sources */,
+				AE2C84702360638A00F30181 /* drug_name_correction.mlmodel in Sources */,
 				AE7B080B2347481D00AC1214 /* ViewController.swift in Sources */,
 				AE7B08072347481D00AC1214 /* AppDelegate.swift in Sources */,
-				AE3AB92A2355971600B55496 /* pain_level_training.mlmodel in Sources */,
 				AE7435D82350582B00C07DA1 /* Embeddings.swift in Sources */,
 				AE7B08092347481D00AC1214 /* SceneDelegate.swift in Sources */,
 			);
